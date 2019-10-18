@@ -8,7 +8,10 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
      
 </head>
-<body id="top" class="grey darken-4">
+<body  class="grey darken-4">
+            
+    <div id="top" class="scrollspy">
+    </div>
     
     <!-- Navbar -->
     <div class="navbar-fixed">
@@ -35,7 +38,7 @@
             <br>
             <br>
             <br>
-            <div class="col s6">
+            <div class="col s12 m6">
                 <div class="card grey">
                     <div class="card-image">
                         <img src="http://ideasgeek.net/wp-content/images/lord-of-rings-barad-dur-eye.jpg" alt="">
@@ -49,11 +52,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col s6">
+            <div class="col s12 m6">
                 <div class="card grey">
                     <div class="card-image">
                         <img src="https://lasaventurasderuvik.files.wordpress.com/2015/03/mount-doom-lotr.jpg" alt="">
-                        <span class="card-title">Monte del destino</span>
+                        <span class="card-title">Puenting en el Monte del destino</span>
                     </div>
                     <div class="card-content section">                           
                         <p>Tírate al verdadero volcán de Orodruin, el volcan mas alto de la tierra 
@@ -147,14 +150,14 @@
         </div>
       </footer>
 
-
-     <!-- Compiled and minified JavaScript -->
+        <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-       M.AutoInit();
-     });
-    </script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.scrollspy');
+            var instances = M.ScrollSpy.init(elems, options);
+         });
+        </script>
+
 </body>
 </html>
